@@ -1,2 +1,7 @@
 ﻿import * as application from 'tns-core-modules/application';
-application.start({ moduleName: "main-page" });
+import { CustomAppDelegate } from 'nativescript-google-drive';
+
+application.ios.delegate = CustomAppDelegate;
+application.start({ moduleName: "login" });
+
+
